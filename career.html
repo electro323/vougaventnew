@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Vougavent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logof.png" alt="Vougavent Logo">
+      </a>
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a> 
+        
+        <div class="services-dropdown">
+            <a href="javascript:void(0)" class="nav-item">Services <span class="arrow-down">⌄</span></a>
+            <div class="mega-menu">
+                <div class="mega-grid">
+                    <div class="mega-col">
+                        <h4>EMI-EMC Consulting</h4>
+                        <ul>
+                            <li><span>EMI-EMC Pre Compliance Testing</span></li>
+                            <li><span>EMI-EMC Failure Analysis</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>Antenna And RF Design</h4>
+                        <ul>
+                            <li><span>RF Based Product Development</span></li>
+                            <li><span>Antenna Design</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>IOT</h4>
+                        <ul>
+                            <li><span>LoRaWAN Solutions</span></li>
+                            <li><span>Cloud Integration</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-dropdown">
+            <a href="javascript:void(0)" class="nav-item">Products <span class="arrow-down">⌄</span></a>
+            <div class="mega-menu product-menu">
+                <div class="mega-grid">
+                    <div class="mega-col">
+                        <h4>EMI-EMC Pre Compliance</h4>
+                        <ul>
+                            <li><span>QESD-15A</span></li>
+                            <li><span>GTEM Cell</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>IOT Solutions</h4>
+                        <ul>
+                            <li><span>IoT Gateway (GW1000)</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>Industrial Automation</h4>
+                        <ul>
+                            <li><span>Industrial Display</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="career.html">Career</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="menu-toggle" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<div class="mobile-sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <span class="sidebar-close" id="sidebar-close-btn">&times;</span>
+    </div>
+    <nav class="sidebar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="sidebar-dropdown">
+            <a href="javascript:void(0)" class="sidebar-toggle">Services <span>⌄</span></a>
+        </div>
+        <div class="sidebar-dropdown">
+            <a href="javascript:void(0)" class="sidebar-toggle">Products <span>⌄</span></a>
+        </div>
+        <a href="career.html">Career</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</div>
+
+<div class="sidebar-overlay" id="overlay"></div>
+<body>
+
+    <section class="career-hero">
+        <img src="img/career1.png" alt="Career at Vougavent">
+    </section>
+
+    <section class="openings-section">
+        <div class="container">
+            <h2 class="openings-title">Current Openings</h2>
+            <p class="openings-text">There are currently <span class="highlight">no openings</span>. Please check back later for new opportunities.</p>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="footer-container">
+       <div class="footer-col">
+         <img src="img/logoo.png" class="footer-logo" alt="Vougavent Logo">
+       </div>
+       <div class="footer-col">
+         <div class="footer-heading">
+           <span class="icon">➤</span> 
+           <h4>Our Address</h4>
+         </div>
+         <p>Vougavent Technologies LLP,<br>
+            1489, 5th Cross, 29th Main Rd,<br>
+            Stage 2, BTM Layout,<br>
+            Bengaluru, Karnataka 560076</p>
+       </div>
+       <div class="footer-col">
+         <div class="footer-heading">
+           <span class="icon">✉</span> 
+           <h4>Contact Us</h4>
+         </div>
+         <p>+91 80 56 637 776<br>
+            +91 88 48 024 289<br>
+            info@vougavent.com</p>
+       </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Vougavent Technologies LLP. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+        /* --- 1. HOME PAGE CARD TOGGLES --- */
+        function toggleServices(cardNum) {
+            const card = document.getElementById(`card-${cardNum}`);
+            const extraContent = card.querySelector('.extra-services');
+            const btnText = card.querySelector('.btn-text');
+            const arrow = card.querySelector('.arrow-down');
+
+            if (extraContent.style.display === "none") {
+                extraContent.style.display = "block";
+                btnText.innerText = "Hide Services";
+                arrow.style.transform = "rotate(180deg)";
+                arrow.style.display = "inline-block";
+            } else {
+                extraContent.style.display = "none";
+                btnText.innerText = "View Services";
+                arrow.style.transform = "rotate(0deg)";
+            }
+        }
+
+        /* --- 2. MOBILE SIDEBAR LOGIC --- */
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('sidebar-close-btn');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+
+        if (menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+            });
+            closeBtn.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        }
+    </script>
+</body>
+</html>
+
+    </body>
+</html>

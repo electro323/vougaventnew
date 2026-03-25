@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Vougavent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logof.png" alt="Vougavent Logo">
+      </a>
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a> 
+        
+        <div class="services-dropdown">
+            <a href="javascript:void(0)" class="nav-item">Services <span class="arrow-down">⌄</span></a>
+            <div class="mega-menu">
+                <div class="mega-grid">
+                    <div class="mega-col">
+                        <h4>EMI-EMC Consulting</h4>
+                        <ul>
+                            <li><span>EMI-EMC Pre Compliance Testing</span></li>
+                            <li><span>EMI-EMC Failure Analysis</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>Antenna And RF Design</h4>
+                        <ul>
+                            <li><span>RF Based Product Development</span></li>
+                            <li><span>Antenna Design</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>IOT</h4>
+                        <ul>
+                            <li><span>LoRaWAN Solutions</span></li>
+                            <li><span>Cloud Integration</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-dropdown">
+            <a href="javascript:void(0)" class="nav-item">Products <span class="arrow-down">⌄</span></a>
+            <div class="mega-menu product-menu">
+                <div class="mega-grid">
+                    <div class="mega-col">
+                        <h4>EMI-EMC Pre Compliance</h4>
+                        <ul>
+                            <li><span>QESD-15A</span></li>
+                            <li><span>GTEM Cell</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>IOT Solutions</h4>
+                        <ul>
+                            <li><span>IoT Gateway (GW1000)</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>Industrial Automation</h4>
+                        <ul>
+                            <li><span>Industrial Display</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="career.html">Career</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="menu-toggle" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<div class="mobile-sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <span class="sidebar-close" id="sidebar-close-btn">&times;</span>
+    </div>
+    <nav class="sidebar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="sidebar-dropdown">
+            <a href="javascript:void(0)" class="sidebar-toggle">Services <span>⌄</span></a>
+        </div>
+        <div class="sidebar-dropdown">
+            <a href="javascript:void(0)" class="sidebar-toggle">Products <span>⌄</span></a>
+        </div>
+        <a href="career.html">Career</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</div>
+
+<div class="sidebar-overlay" id="overlay"></div>
+
+  <section class="about-hero">
+    <img src="img/about1.png" alt="About Banner">
+  </section>
+
+  <section class="about-grid">
+    <div class="card mission-card">
+      <h2>Our Mission</h2>
+      <h3 style="color: #1e4da1; margin-bottom: 20px;">Innovating for a Connected Future</h3>
+      <p>Founded in 2016 in Bengaluru, Vougavent specializes in product development across Radio Frequency and Electronic design, leveraging deep expertise to solve complex challenges for our B2B clients.</p>
+      
+      <h4 style="color: #08264f; margin-top: 25px; margin-bottom: 15px;">Our Key Focus Areas:</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 12px; display: flex; align-items: center; color: #444; font-weight: normal;">
+          <span style="color: #28a745; margin-right: 12px; font-size: 18px;">✔</span> Wireless Communication
+        </li>
+        <li style="margin-bottom: 12px; display: flex; align-items: center; color: #444; font-weight: normal;">
+          <span style="color: #28a745; margin-right: 12px; font-size: 18px;">✔</span> Mobility
+        </li>
+        <li style="margin-bottom: 12px; display: flex; align-items: center; color: #444; font-weight: normal;">
+          <span style="color: #28a745; margin-right: 12px; font-size: 18px;">✔</span> Internet of Things (IoT)
+        </li>
+        <li style="margin-bottom: 12px; display: flex; align-items: center; color: #444; font-weight: normal;">
+          <span style="color: #28a745; margin-right: 12px; font-size: 18px;">✔</span> Consumer Electronics
+        </li>
+      </ul>
+    </div>
+
+    <div class="card journey-card">
+      <h2>Our Journey</h2>
+      <p style="margin-bottom: 30px;">Milestones from 2016</p>
+      
+      <div class="timeline" style="display: flex; justify-content: space-between; position: relative; padding-top: 20px;">
+        <div style="position: absolute; top: 45px; left: 5%; width: 90%; height: 2px; background: #d1d9e6; z-index: 1;"></div>
+        
+        <div class="milestone" style="flex: 1; z-index: 2;">
+          <div style="background: #1e4da1; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">2016</div>
+          <h5 style="font-size: 13px; color: #08264f;">Founded</h5>
+          <p style="font-size: 10px; line-height: 1.3; margin-top: 5px;">Bangalore consultancy firm.</p>
+        </div>
+
+        <div class="milestone" style="flex: 1; z-index: 2;">
+          <div style="background: #1e4da1; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">2017</div>
+          <h5 style="font-size: 13px; color: #08264f;">Portfolio</h5>
+          <p style="font-size: 10px; line-height: 1.3; margin-top: 5px;">Expanded design services.</p>
+        </div>
+
+        <div class="milestone" style="flex: 1; z-index: 2;">
+          <div style="background: #1e4da1; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">2018</div>
+          <h5 style="font-size: 13px; color: #08264f;">IoT Arch.</h5>
+          <p style="font-size: 10px; line-height: 1.3; margin-top: 5px;">Launched IoT SDKs.</p>
+        </div>
+
+        <div class="milestone" style="flex: 1; z-index: 2;">
+          <div style="background: #1e4da1; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">2019</div>
+          <h5 style="font-size: 13px; color: #08264f;">Electronics</h5>
+          <p style="font-size: 10px; line-height: 1.3; margin-top: 5px;">Automotive & Medical.</p>
+        </div>
+
+        <div class="milestone" style="flex: 1; z-index: 2;">
+          <div style="background: #1e4da1; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">2021</div>
+          <h5 style="font-size: 13px; color: #08264f;">Compliance</h5>
+          <p style="font-size: 10px; line-height: 1.3; margin-top: 5px;">EMC/EMI Lab Solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="philosophy-section">
+    <div class="philosophy-container">
+      <div class="philosophy-image">
+        <img src="img/about2.png" alt="Our Philosophy">
+      </div>
+      <div class="philosophy-text">
+        <h2>Our Philosophy</h2>
+        <p>Vougavent stands apart through its strategic business model, driving innovation and development with unique technical expertise and a highly productive team. We prioritize quality, cost-effectiveness, and customer success.</p>
+        <p>We serve critical sectors including <strong>Defense, Industrial Automation, Instrumentation, Embedded Systems,</strong> and <strong>Wireless Communication</strong>.</p>
+        
+        <div class="philosophy-features">
+          <div class="feature-item"><span>🎗️</span> Quality First</div>
+          <div class="feature-item"><span>🌐</span> Customer-Centric</div>
+          <div class="feature-item"><span>📍</span> Innovation Driven</div>
+          <div class="feature-item"><span>⚙️</span> Technical Expertise</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="industries-section">
+    <h2 class="section-title">Industries in Focus</h2>
+    <div class="underline"></div>
+    <div class="industries-grid">
+      <div class="industry-card">
+        <div class="industry-img-box"><img src="img/about3.png" alt="Industrial"></div>
+        <h3>Industrial</h3>
+        <p class="italic-sub">Adding Intelligence to the machines</p>
+        <p>Adding intelligence and connectivity to the machine ensures futuristic and smart industries.</p>
+      </div>
+      <div class="industry-card">
+        <div class="industry-img-box"><img src="img/about4.png" alt="Medical"></div>
+        <h3>Medical</h3>
+        <p class="italic-sub">Diagnosis with Precision</p>
+        <p>Precision and reliability ensured by Vougavent design approach empower medical devices.</p>
+      </div>
+      <div class="industry-card">
+        <div class="industry-img-box"><img src="img/about5.png" alt="Mobility"></div>
+        <h3>Mobility</h3>
+        <p class="italic-sub">Futuristic and Reliable</p>
+        <p>Our solutions include Clusters, E-drives and EV Charging Stations for reliable development.</p>
+      </div>
+      <div class="industry-card">
+        <div class="industry-img-box"><img src="img/about6.png" alt="Consumer Electronics"></div>
+        <h3>Consumer Electronics</h3>
+        <p class="italic-sub">Value Driven Solution</p>
+        <p>Expertise on developing value-driven solutions for better market penetration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="values-section">
+    <h2 class="section-title">Our Values</h2>
+    <div class="underline"></div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">✔</div>
+        <h3>Customer First</h3>
+        <p>Exceed expectations through flexible engagement models.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">⚙</div>
+        <h3>Trust and Integrity</h3>
+        <p>Delivering the right thing for customers at the right time.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🍃</div>
+        <h3>Passion</h3>
+        <p>Focused on technology and enhancing expertise in domain-driven design.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">📺</div>
+        <h3>Quality</h3>
+        <p>Ensure state-of-the-art quality in all deliverables.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">💡</div>
+        <h3>Innovation</h3>
+        <p>Promoting a culture of innovation and technological advancement.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">👍</div>
+        <h3>Delivering Value</h3>
+        <p>Ensuring customers get the best value for their money.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+       <div class="footer-col">
+         <img src="img/logoo.png" class="footer-logo" alt="Vougavent Logo">
+       </div>
+       <div class="footer-col">
+         <div class="footer-heading">
+           <span class="icon">➤</span> 
+           <h4>Our Address</h4>
+         </div>
+         <p>Vougavent Technologies LLP,<br>
+            1489, 5th Cross, 29th Main Rd,<br>
+            Stage 2, BTM Layout,<br>
+            Bengaluru, Karnataka 560076</p>
+       </div>
+       <div class="footer-col">
+         <div class="footer-heading">
+           <span class="icon">✉</span> 
+           <h4>Contact Us</h4>
+         </div>
+         <p>+91 80 56 637 776<br>
+            +91 88 48 024 289<br>
+            info@vougavent.com</p>
+       </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Vougavent Technologies LLP. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+        /* --- 1. HOME PAGE CARD TOGGLES --- */
+        function toggleServices(cardNum) {
+            const card = document.getElementById(`card-${cardNum}`);
+            const extraContent = card.querySelector('.extra-services');
+            const btnText = card.querySelector('.btn-text');
+            const arrow = card.querySelector('.arrow-down');
+
+            if (extraContent.style.display === "none") {
+                extraContent.style.display = "block";
+                btnText.innerText = "Hide Services";
+                arrow.style.transform = "rotate(180deg)";
+                arrow.style.display = "inline-block";
+            } else {
+                extraContent.style.display = "none";
+                btnText.innerText = "View Services";
+                arrow.style.transform = "rotate(0deg)";
+            }
+        }
+
+        /* --- 2. MOBILE SIDEBAR LOGIC --- */
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('sidebar-close-btn');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+
+        if (menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+            });
+            closeBtn.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>

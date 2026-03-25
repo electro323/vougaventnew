@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vougavent | Redefining Limits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logof.png" alt="Vougavent Logo">
+      </a>
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a> 
+        
+        <div class="services-dropdown">
+            <a href="javascript:void(0)" class="nav-item">Services <span class="arrow-down">⌄</span></a>
+            <div class="mega-menu">
+                <div class="mega-grid">
+                    <div class="mega-col">
+                        <h4>EMI-EMC Consulting</h4>
+                        <ul>
+                            <li><span>EMI-EMC Pre Compliance Testing</span></li>
+                            <li><span>EMI-EMC Failure Analysis</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>Antenna And RF Design</h4>
+                        <ul>
+                            <li><span>RF Based Product Development</span></li>
+                            <li><span>Antenna Design</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>IOT</h4>
+                        <ul>
+                            <li><span>LoRaWAN Solutions</span></li>
+                            <li><span>Cloud Integration</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-dropdown">
+            <a href="javascript:void(0)" class="nav-item">Products <span class="arrow-down">⌄</span></a>
+            <div class="mega-menu product-menu">
+                <div class="mega-grid">
+                    <div class="mega-col">
+                        <h4>EMI-EMC Pre Compliance</h4>
+                        <ul>
+                            <li><span>QESD-15A</span></li>
+                            <li><span>GTEM Cell</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>IOT Solutions</h4>
+                        <ul>
+                            <li><span>IoT Gateway (GW1000)</span></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>Industrial Automation</h4>
+                        <ul>
+                            <li><span>Industrial Display</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="career.html">Career</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="menu-toggle" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<div class="mobile-sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <span class="sidebar-close" id="sidebar-close-btn">&times;</span>
+    </div>
+    <nav class="sidebar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="sidebar-dropdown">
+            <a href="javascript:void(0)" class="sidebar-toggle">Services <span>⌄</span></a>
+        </div>
+        <div class="sidebar-dropdown">
+            <a href="javascript:void(0)" class="sidebar-toggle">Products <span>⌄</span></a>
+        </div>
+        <a href="career.html">Career</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</div>
+
+<div class="sidebar-overlay" id="overlay"></div>
+
+  <section class="slider">
+    <div class="slides">
+      <div class="slide">
+        <img src="img/1img.jpeg" alt="Slide 1">
+        <div class="text">Wireless Communication</div>
+      </div>
+
+      <div class="slide">
+        <img src="img/2img.jpeg" alt="Slide 2">
+        <div class="text">Electronic Design</div>
+      </div>
+
+      <div class="slide">
+        <img src="img/3img.jpeg" alt="Slide 3">
+        <div class="text">Innovation Excellence</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blue-editorial-section">
+    <div class="about-container">
+      <p class="about-text">
+        Vougavent is a reliable technology partner with strong focus. Founded in 2016, committed to delivering <strong>state-of-the-art engineering solutions</strong> that drive innovation and excellence
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" id="card-1">
+        <div class="card-top">
+          <h2>Electronics Product Design</h2>
+          <p>The Vougavent engineering team is composed of seasoned industry experts with deep expertise in embedded hardware, high-speed design, power electronics, and related fields. Driven by a strong passion for electronics design, we have established ourselves as a trusted design house...</p>
+          
+          <div class="extra-services" style="display: none;">
+            <ul class="bullet-list">
+              <li>Internet of Things (IoT)</li>
+              <li>Medical Electronics</li>
+              <li>Automotive Electronics</li>
+              <li>Industrial Electronics</li>
+              <li>Consumer Electronics</li>
+            </ul>
+          </div>
+
+          <a href="javascript:void(0)" class="view-services" onclick="toggleServices(1)">
+            <span class="btn-text">View Services</span> <span class="arrow-down">⌄</span>
+          </a>
+        </div>
+        <button class="blue-footer-btn">More about Product Engineering</button>
+      </div>
+
+      <div class="service-card" id="card-2">
+        <div class="card-top">
+          <h2>RF and Antenna design</h2>
+          <p>The Vougavent engineering team is composed of seasoned industry experts with deep expertise in embedded hardware, high-speed design, power electronics, and related fields. Driven by a strong passion for electronics design, we have established ourselves as a trusted design house...</p>
+          
+          <div class="extra-services" style="display: none;">
+            <ul class="bullet-list">
+              <li>Antenna Design</li>
+              <li>Impedance Matching circuit</li>
+              <li>RF Debugging</li>
+              <li>IoT devices Range improvements</li>
+              <li>Wireless certification</li>
+            </ul>
+          </div>
+
+          <a href="javascript:void(0)" class="view-services" onclick="toggleServices(2)">
+            <span class="btn-text">View Services</span> <span class="arrow-down">⌄</span>
+          </a>
+        </div>
+        <button class="blue-footer-btn">More about Product Engineering</button>
+      </div>
+
+      <div class="service-card" id="card-3">
+        <div class="card-top">
+          <h2>EMI-EMC Consulting</h2>
+          <p>The Vougavent engineering team is composed of seasoned industry experts with deep expertise in embedded hardware, high-speed design, power electronics, and related fields. Driven by a strong passion for electronics design, we have established ourselves as a trusted design house...</p>
+          
+          <div class="extra-services" style="display: none;">
+            <ul class="bullet-list">
+              <li>EMI EMC Failure analysis</li>
+              <li>Pre compliance measurement</li>
+              <li>EMC in Design consulting</li>
+              <li>Design review</li>
+              <li>CE and FCC Certification</li>
+              <li>Homologation</li>
+              <li>EMI-EMC Near Field probing</li>
+            </ul>
+          </div>
+
+          <a href="javascript:void(0)" class="view-services" onclick="toggleServices(3)">
+            <span class="btn-text">View Services</span> <span class="arrow-down">⌄</span>
+          </a>
+        </div>
+        <button class="blue-footer-btn">More about Product Engineering</button>
+      </div>
+    </div>
+  </section>
+  <section class="partner-section">
+    <div class="container">
+        <h2>We are a Global Partner for the Radio Frequency and Antenna Solutions</h2>
+        <p>The Vougavent engineering team is composed of seasoned industry experts with deep expertise in embedded hardware, high-speed design, power electronics, and related fields. Driven by a strong passion for electronics design, we have established ourselves as a trusted design house, consistently delivering high-quality products across diverse segments, including:</p>
+        <button class="read-more-btn">Read More</button>
+    </div>
+</section>
+
+<section class="products-section">
+    <div class="blue-header-bar">
+        <h3>Reliable Designs. Innovative Solutions.</h3>
+        <p>Is our focus point</p>
+    </div>
+    
+    <div class="container">
+        <h2 class="section-title">Our Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="img/home11.png" alt="Edge computing">
+                </div>
+                <h4>Edge computing and AI Hardware</h4>
+                <button class="know-more-btn">KNOW MORE</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="img/home12.png" alt="Image processing">
+                </div>
+                <h4>Image-processing and Displays</h4>
+                <button class="know-more-btn">KNOW MORE</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="img/home13.png" alt="EMC Pre compliance">
+                </div>
+                <h4>EMC Pre compliance solutions</h4>
+                <button class="know-more-btn">KNOW MORE</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="redefine-banner">
+    <div class="container">
+        <div class="redefine-content">
+            <h2>Redefine..</h2>
+            <h3>Product engineering with your imagination and our expertise</h3>
+            <p>At Vougavent, we are an innovative, dynamic, and flexible company committed to continuous improvement—both technologically and humanistically. We firmly believe that knowledge and innovation, when paired with the well-being of our employees, are essential not only for thriving in the present but also for achieving long-term success.</p>
+        </div>
+    </div>
+</section>
+
+<section class="standout-outer-wrapper">
+    <div class="container">
+        <div class="standout-inner-box">
+            <div class="standout-left">
+                <h2>What makes our solutions stand out</h2>
+                <a href="#" class="contact-btn">Contact us</a>
+            </div>
+
+            <div class="standout-right">
+                <div class="standout-card">
+                    <div class="card-header">
+                        <span class="feature-icon">📟</span>
+                        <h4>State of the art engineering facility</h4>
+                    </div>
+                    <p>The Vougavent engineering team is composed of seasoned industry experts with deep expertise in embedded hardware, high-speed design, power electronics, and related fields.</p>
+                </div>
+
+                <div class="standout-card">
+                    <div class="card-header">
+                        <span class="feature-icon">💼</span>
+                        <h4>Decades of experience with diverse industries</h4>
+                    </div>
+                    <p>The Vougavent engineering team is composed of seasoned industry experts with deep expertise in embedded hardware, high-speed design, power electronics, and related fields.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer class="main-footer">
+    <div class="container footer-container">
+        <div class="footer-col logo-col">
+            <img src="img/logoo.png" alt="Vougavent Logo" class="footer-logo">
+        </div>
+
+        <div class="footer-col">
+            <div class="footer-heading">
+                <span class="footer-icon">🚀</span> <h4>Our Address</h4>
+            </div>
+            <p>Vougavent Technologies LLP,<br>
+               1489, 5th Cross, 29th Main Rd,<br>
+               Stage 2, BTM Layout,<br>
+               Bengaluru, Karnataka 560076</p>
+        </div>
+
+        <div class="footer-col">
+            <div class="footer-heading">
+                <span class="footer-icon">✉</span> <h4>Contact Us</h4>
+            </div>
+            <div class="contact-info">
+                <p>+91 80 56 637 776</p>
+                <p>+91 88 48 024 289</p>
+                <p>info@vougavent.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Vougavent Technologies LLP. All Rights Reserved.</p>
+    </div>
+</footer>
+
+  <script>
+        /* --- 1. HOME PAGE CARD TOGGLES --- */
+        function toggleServices(cardNum) {
+            const card = document.getElementById(`card-${cardNum}`);
+            const extraContent = card.querySelector('.extra-services');
+            const btnText = card.querySelector('.btn-text');
+            const arrow = card.querySelector('.arrow-down');
+
+            if (extraContent.style.display === "none") {
+                extraContent.style.display = "block";
+                btnText.innerText = "Hide Services";
+                arrow.style.transform = "rotate(180deg)";
+                arrow.style.display = "inline-block";
+            } else {
+                extraContent.style.display = "none";
+                btnText.innerText = "View Services";
+                arrow.style.transform = "rotate(0deg)";
+            }
+        }
+
+        /* --- 2. MOBILE SIDEBAR LOGIC --- */
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('sidebar-close-btn');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+
+        if (menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+            });
+            closeBtn.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>
